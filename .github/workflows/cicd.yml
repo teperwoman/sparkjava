@@ -73,7 +73,7 @@ jobs:
        #changer le nom de yaml
       - uses: Azure/k8s-deploy@v1.3
         with:
-          namespace: 'default'
+          namespace: 'sparkjava'
           manifests: |
               kubernetes/all-in-one.yaml
           images: 'tftest/sparkjava:${{ github.sha }}'
